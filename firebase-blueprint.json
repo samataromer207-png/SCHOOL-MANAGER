@@ -1,0 +1,103 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "System accounts for admins, teachers, and students",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "username": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "salt": { "type": "string" },
+        "role": { "type": "string", "enum": ["Admin", "Teacher", "Student"] },
+        "studentId": { "type": "string" },
+        "teacherClass": { "type": "string" }
+      },
+      "required": ["id", "username", "fullName", "email", "passwordHash", "salt", "role"]
+    },
+    "Student": {
+      "title": "Student",
+      "description": "Student information system record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "class": { "type": "string" },
+        "gender": { "type": "string" },
+        "guardianPhone": { "type": "string" },
+        "status": { "type": "string", "enum": ["active", "inactive"] },
+        "createdAt": { "type": "string" },
+        "dateOfBirth": { "type": "string" },
+        "address": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "academicHistory": { "type": "array" }
+      },
+      "required": ["id", "fullName", "class", "gender", "status", "createdAt"]
+    },
+    "FeeInvoice": {
+      "title": "FeeInvoice",
+      "description": "Tuition fee invoices and payment log histories",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "studentId": { "type": "string" },
+        "month": { "type": "string" },
+        "year": { "type": "integer" },
+        "amount": { "type": "number" },
+        "paidAmount": { "type": "number" },
+        "status": { "type": "string", "enum": ["paid", "partial", "unpaid"] },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "history": { "type": "array" }
+      },
+      "required": ["id", "studentId", "month", "year", "amount", "paidAmount", "status", "createdAt", "updatedAt"]
+    },
+    "AttendanceRecord": {
+      "title": "AttendanceRecord",
+      "description": "Daily attendance logs",
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "records": { "type": "array" }
+      },
+      "required": ["date", "records"]
+    },
+    "SchoolSettings": {
+      "title": "SchoolSettings",
+      "description": "General system configuration parameters",
+      "type": "object",
+      "properties": {
+        "schoolName": { "type": "string" },
+        "currency": { "type": "string" },
+        "feeAmount": { "type": "number" },
+        "systemTheme": { "type": "string", "enum": ["light", "dark"] }
+      },
+      "required": ["schoolName", "currency", "feeAmount", "systemTheme"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "#/entities/User",
+      "description": "Authentication and authorization records"
+    },
+    "/students/{studentId}": {
+      "schema": "#/entities/Student",
+      "description": "Student roster"
+    },
+    "/fees/{feeId}": {
+      "schema": "#/entities/FeeInvoice",
+      "description": "Financial records"
+    },
+    "/attendance/{date}": {
+      "schema": "#/entities/AttendanceRecord",
+      "description": "Attendance history"
+    },
+    "/settings/config": {
+      "schema": "#/entities/SchoolSettings",
+      "description": "School level configurations"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "username": "sacad1",
+      "fullName": "maxamed",
+      "email": "saddcfvf@gmail.com",
+      "salt": "0c34fdfe85e829e0fc354c5cd5df8d8c",
+      "role": "Admin",
+      "id": "7d31bb11-56e3-4339-8dc0-98f218c59500",
+      "passwordHash": "066f8aaec6bc4eed72d1a59ce66ea6677ae6e0ea4be8d32848dcb6a933a31a47a8c2cfa249baf60083b48f498b2a157a85f1e069312c3bd2a318936953afa86c"
+    },
+    {
+      "username": "osmaan1",
+      "fullName": "osmaan",
+      "email": "samataromer4@gmail.com",
+      "id": "8e38d2e2-f21c-46e3-ba23-f85bdfc899ea",
+      "salt": "2b715a79b2c416f919059e52187482db",
+      "role": "Admin",
+      "passwordHash": "1401685d23a85ad50e920d4054f474418e064a9495709a0ab09f8ccfc9c265a621e99653f74b41611c108f3ddced1c7ba634e9ac6cdc6ae048fb4e9641a47ff3"
+    },
+    {
+      "username": "test_1781116624502",
+      "fullName": "Integration Test User",
+      "email": "test_1781116624502@gmail.com",
+      "passwordHash": "c1251ce1929f4b187cd53a048c1469dc494780fd5e59b61ca609e68c5a71107e2020102e8caa8c6205723c5f092b1e901ac3d76287008b75865c3ecda65cbcdc",
+      "role": "Admin",
+      "salt": "74ff894201d9e4dfdfbc0141ab667360",
+      "id": "a9584090-17a6-4f47-b442-00397dbaa5a5"
+    },
+    {
+      "username": "test_1781116605401",
+      "fullName": "Integration Test User",
+      "email": "test_1781116605401@gmail.com",
+      "id": "b9dbaa56-696a-4bc8-9a97-68a47deec5f8",
+      "salt": "70423398ddf984f17dd426b9cc278080",
+      "role": "Admin",
+      "passwordHash": "b6815be0fd07e35171967d07134efc54ebab983237a1436aa6af4955d47ad6f46d9b19b46ad148d22c92bc3cbe19d38fd33560e573bb18ea1e1f67abc02f792e"
+    },
+    {
+      "username": "test_1781116647090",
+      "fullName": "Integration Test User",
+      "email": "test_1781116647090@gmail.com",
+      "passwordHash": "2aacc017f4f6db5bb26eb96347e259faab43c875f04d0f28623e9edeb71013cb8b6c0663817e144448c9292a7ed161df034be1b604df8f0412c1469bcbe6f76b",
+      "id": "e6b7a4fa-eab5-4ff5-b8b3-083c1c9b2670",
+      "salt": "59b604cd35d88e2a1331e17c51c06e67",
+      "role": "Admin"
+    }
+  ],
+  "tokens": {
+    "24c18f43-6fcb-4ac0-b586-846e83fa1faa": {
+      "userId": "a9584090-17a6-4f47-b442-00397dbaa5a5",
+      "expiresAt": "2026-06-11T18:37:04.740Z"
+    },
+    "41bd9023-3b4b-4a23-a554-ef18cc4e712b": {
+      "userId": "e6b7a4fa-eab5-4ff5-b8b3-083c1c9b2670",
+      "expiresAt": "2026-06-11T18:37:27.383Z"
+    },
+    "467b60c0-b17d-441a-bd0b-54e1cd802656": {
+      "userId": "8e38d2e2-f21c-46e3-ba23-f85bdfc899ea",
+      "expiresAt": "2026-06-11T20:25:10.644Z"
+    },
+    "cde20ddb-fc1d-4bee-bbdc-c19688562c04": {
+      "userId": "e6b7a4fa-eab5-4ff5-b8b3-083c1c9b2670",
+      "expiresAt": "2026-06-11T18:37:27.562Z"
+    },
+    "da370329-ea30-4dbf-a79a-7aaa57c441cc": {
+      "userId": "8e38d2e2-f21c-46e3-ba23-f85bdfc899ea",
+      "expiresAt": "2026-06-11T18:04:13.494Z"
+    },
+    "ddccb082-8bbd-4a33-813d-849e1f046ed9": {
+      "userId": "b9dbaa56-696a-4bc8-9a97-68a47deec5f8",
+      "expiresAt": "2026-06-11T18:36:45.758Z"
+    },
+    "eaec7d49-3f5c-41b7-82bc-5c4eced517f1": {
+      "userId": "8e38d2e2-f21c-46e3-ba23-f85bdfc899ea",
+      "expiresAt": "2026-06-14T17:10:57.198Z"
+    }
+  },
+  "students": [
+    {
+      "dateOfBirth": "",
+      "fullName": "maxamuud",
+      "id": "stud-7419817b-mq8czqw8",
+      "email": "",
+      "academicHistory": [],
+      "phone": "",
+      "guardianPhone": "",
+      "gender": "Male",
+      "class": "7",
+      "address": "",
+      "createdAt": "2026-06-10",
+      "status": "active"
+    }
+  ],
+  "courses": [],
+  "attendance": {},
+  "fees": {
+    "stud-7419817b-mq8czqw8": [
+      {
+        "paidAmount": 50,
+        "year": 2026,
+        "id": "fee-99b666d7-mq8d3ha4",
+        "updatedAt": "2026-06-10T17:48:07.374Z",
+        "month": "June",
+        "status": "paid",
+        "createdAt": "2026-06-10T17:47:57.628Z",
+        "amount": 50,
+        "history": [
+          {
+            "action": "created",
+            "amount": 40,
+            "date": "2026-06-10T17:47:57.628Z"
+          },
+          {
+            "date": "2026-06-10T17:48:07.374Z",
+            "amount": 50,
+            "action": "Recorded payment of USD 10.00"
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "schoolName": "Dugsiga Pro 2026",
+    "currency": "USD",
+    "feeAmount": 50,
+    "systemTheme": "light"
+  }
+}

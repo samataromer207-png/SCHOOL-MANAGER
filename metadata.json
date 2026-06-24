@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Dugsiga Manager 2026",
+  "description": "Nidaamka maamulka dugsiga oo idil oo leh iska diiwaangalinta macallimiinta, maamulidda ardayda, goobjoogga (attendance), khidmadaha/fiisaska, iyo warbixinnada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
